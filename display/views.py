@@ -6,8 +6,13 @@ def index_view(request):
     return render(request,'index.html')
 
 def new_task(request):
+    choices = [
+        ('New', 'New'),
+        ('In Progress', 'In Progress'),
+        ('Completed', 'Completed'),
+    ]
     if request.method == 'GET':
-        return render(request,'new_task.html')
+        return render(request,'new_task.html',{'choices': choices})
     elif request.method == 'POST':
         objective = request.POST.get('objective')
         status = 'new'
