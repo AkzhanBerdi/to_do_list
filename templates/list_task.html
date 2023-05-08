@@ -1,3 +1,6 @@
+{% extends 'base.html' %}
+{% block title %} List of Tasks {% endblock %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +12,9 @@
 </head>
 <body>
     <div>
-        {% block content %}
+        
             <ul class="list-group">
-                {% for task in tasks %}
+                {% for task in task %}
                     <li class="list-group-item"> {{ task.objective }}</li>
                 {% endfor %}
             </ul>

@@ -10,7 +10,7 @@ def new_task(request):
         return render(request,'new_task.html')
     elif request.method == 'POST':
         objective = request.POST.get('objective')
-        status = request.POST.get('status')
+        status = 'new'
         date = request.POST.get('date')
         Task.objects.create(objective = objective, status = status, dead_line= date)
 

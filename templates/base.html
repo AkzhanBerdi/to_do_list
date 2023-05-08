@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'main' %}">Home</a></li>
+            <li><a href="{% url 'new_task' %}">New Task</a></li>
+            <li><a href="{% url 'list_task' %}">List Tasks</a></li>
+        </ul>
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+</html>
