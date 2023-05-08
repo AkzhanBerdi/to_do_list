@@ -19,7 +19,10 @@ from django.contrib import admin
 from django.urls import path
 from display import views as display_views
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', display_views.index_view),
+    path('new_task/', display_views.new_task, name='new_task'),
+    path('list_task/', display_views.list_task, name='list_task'),
 ]
