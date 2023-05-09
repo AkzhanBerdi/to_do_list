@@ -1,7 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Task
-from django.core.exceptions import ValidationError
-from django import forms
+from datetime import datetime
+# from django.core.exceptions import ValidationError
+# from django import forms
 
 # class InvalidDateFormatError(ValidationError):
 #     pass
@@ -16,6 +17,7 @@ def index_view(request):
     return render(request,'index.html')
 
 def new_task(request):
+    errors = {}
     choices = [
         ('New', 'New'),
         ('In Progress', 'In Progress'),
@@ -26,11 +28,15 @@ def new_task(request):
     elif request.method == 'POST':
         task = Task.objects.all()
         objective = request.POST.get('objective')
-        status = 'new'
+        status = request.POST.get('status')
         date = request.POST.get('date')
-        Task.objects.create(objective = objective, status = status, dead_line = date)
-
-        return render(request, 'list_task.html', context={'task': task})
+        try:
+            datetime.strptime(date, "%Y-%m-%d")
+            Task.objects.create(objective = objective, status = status, dead_line = date)
+            return render(request, 'list_task.html', context={'task': task})
+        except ValueError:
+            errors['date'] = "The following format required 'YYYY-MM-DD'"
+            return render(request, 'new_task.html', context={'errors':errors})
 
 def list_task(request):
     task = Task.objects.all()
