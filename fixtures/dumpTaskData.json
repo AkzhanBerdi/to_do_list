@@ -1,0 +1,83 @@
+[
+{
+    "model": "display.task",
+    "pk": 1,
+    "fields": {
+        "objective": "To have fun with friends",
+        "status": "new",
+        "dead_line": "2023-05-08"
+    }
+},
+{
+    "model": "display.task",
+    "pk": 2,
+    "fields": {
+        "objective": "Say hi to my fellas",
+        "status": "new",
+        "dead_line": "2023-05-08"
+    }
+},
+{
+    "model": "display.task",
+    "pk": 3,
+    "fields": {
+        "objective": "finish homework",
+        "status": "new",
+        "dead_line": "2023-05-09"
+    }
+},
+{
+    "model": "display.task",
+    "pk": 4,
+    "fields": {
+        "objective": "Drink a coffee",
+        "status": "new",
+        "dead_line": "2023-05-08"
+    }
+},
+{
+    "model": "display.task",
+    "pk": 5,
+    "fields": {
+        "objective": "2",
+        "status": "new",
+        "dead_line": "2025-05-08"
+    }
+},
+{
+    "model": "display.task",
+    "pk": 6,
+    "fields": {
+        "objective": "new task",
+        "status": "new",
+        "dead_line": "2023-05-08"
+    }
+},
+{
+    "model": "display.task",
+    "pk": 7,
+    "fields": {
+        "objective": "go to sleep",
+        "status": "new",
+        "dead_line": "2023-05-08"
+    }
+},
+{
+    "model": "display.task",
+    "pk": 8,
+    "fields": {
+        "objective": "go to sleep",
+        "status": "new",
+        "dead_line": "2023-05-08"
+    }
+},
+{
+    "model": "display.task",
+    "pk": 9,
+    "fields": {
+        "objective": "check the tasks",
+        "status": "new",
+        "dead_line": "2023-05-08"
+    }
+}
+]
