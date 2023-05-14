@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import redirect, render, get_object_or_404
 from .models import Task
 from datetime import datetime
 
@@ -24,7 +24,7 @@ def new_task(request):
         try:
             datetime.strptime(date, "%Y-%m-%d")
             Task.objects.create(objective = objective, dead_line = date)
-            return render(request, 'index.html', context={'task': task})
+            return redirect('main')
         except ValueError:
             errors['date'] = "The following format required 'YYYY-MM-DD'"
             return render(request, 'new_task.html', context={'errors':errors})
