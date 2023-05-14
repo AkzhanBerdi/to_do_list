@@ -11,17 +11,8 @@
         <div class="container-fluid">
           <a href="{% url 'main' %}" class="navbar-brand mb-0 h1">Home</a>
           <a href="{% url 'new_task' %}" class="navbar-brand mb-0 h1">New Task</a>
-          <a href="{% url 'list_task' %}" class="navbar-brand mb-0 h1">List Task</a>
         </div>
     </nav>
-
-    <!-- <nav>
-        <ul>
-            <li><a href="{% url 'main' %}">Home</a></li>
-            <li><a href="{% url 'new_task' %}">New Task</a></li>
-            <li><a href="{% url 'list_task' %}">List Tasks</a></li>
-        </ul>
-    </nav> -->
     {% block content %}{% endblock %}
 </body>
 </html>
