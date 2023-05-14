@@ -13,11 +13,11 @@
 <body>
     <div>
         
-            <ul class="list-group">
+            <div class="list-group">
                 {% for task in task %}
-                    <li class="list-group-item"> {{ task.objective }}</li>
+                    <a href="{% url 'detail_task' task.pk %}" class="list-group-item"> {{ task.objective }}</a>
                 {% endfor %}
-            </ul>
+            </div>
         {% endblock %}
     </div>
 </body>

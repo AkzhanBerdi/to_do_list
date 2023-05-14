@@ -41,3 +41,7 @@ def new_task(request):
 def list_task(request):
     task = Task.objects.all()
     return render(request, 'list_task.html', context={'task': task})   
+
+def detail_task(request, *args, **kwargs):
+    task = get_object_or_404(Task,pk=kwargs.get('pk'))
+    return render(request, 'detail_task.html', context = {'task': task})

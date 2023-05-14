@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} Detail View {% endblock %}
+{% block content %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="cartd-title">{{ task.objective }}</h2>
+                    <h6 class="card-title">{{ task.status }}</h3>
+                    <h6 class="card-title">{{ task.dead_line }}</h3>
+                    <p class="card-text">{{ task.description }}</p>
+                    <!-- <div>
+                        <a class="btn btn-primary" role="button">Edit</a>
+                        <a class="btn btrn-danger role=butto">Delete</a>
+                    </div> -->
+            </div>
+    </div> 
+{% endblock %}

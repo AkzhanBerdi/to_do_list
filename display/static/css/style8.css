@@ -1,0 +1,11 @@
+.container {
+  display: table;
+}
+.centered {
+  display: table-cell;
+    height: 400px;
+    width: 800px;
+    background: red;
+  text-align: center;
+  vertical-align: middle;
+  }

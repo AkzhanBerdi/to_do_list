@@ -1,0 +1,446 @@
+[
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add task",
+    "content_type": 7,
+    "codename": "add_task"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change task",
+    "content_type": 7,
+    "codename": "change_task"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete task",
+    "content_type": 7,
+    "codename": "delete_task"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view task",
+    "content_type": 7,
+    "codename": "view_task"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$50LBJbfPc7ExE1HMp6aC2c$2UVaVbxfxmQ9vcf65pU3GwuPFq44wgAwSH8ea3Z8tgQ=",
+    "last_login": "2023-05-08T17:50:56.903Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-05-08T17:50:39.582Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "display",
+    "model": "task"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "7oqtd22pdj2md60nhdhlowg9tjdk4cif",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pAODAVduvcMZBhAqgaS0q6MdzckXej2v_f-W3jat-L3nla_RHERIE6_WyB-pjpAfFC9N8mtbusS5FDkQbu8tZhe18P9OyjUy6hnVhqyOgNZ4ikjUDJTJmeZjXbOZoCAwCa4DMoanDUmoxQiZ2UTis8X4C03Zw:1pw50i:-B0_wWWKAlQyhlpcczYh2TQlUFVuX9gh3K-1rFcxqJI",
+    "expire_date": "2023-05-22T17:50:56.917Z"
+  }
+},
+{
+  "model": "display.task",
+  "pk": 1,
+  "fields": {
+    "objective": "To have fun with friends",
+    "status": "new",
+    "dead_line": "2023-05-08",
+    "description": "This is a default description for each task"
+  }
+},
+{
+  "model": "display.task",
+  "pk": 2,
+  "fields": {
+    "objective": "Say hi to my fellas",
+    "status": "new",
+    "dead_line": "2023-05-08",
+    "description": "This is a default description for each task"
+  }
+},
+{
+  "model": "display.task",
+  "pk": 3,
+  "fields": {
+    "objective": "finish homework",
+    "status": "new",
+    "dead_line": "2023-05-09",
+    "description": "This is a default description for each task"
+  }
+},
+{
+  "model": "display.task",
+  "pk": 4,
+  "fields": {
+    "objective": "Drink a coffee",
+    "status": "new",
+    "dead_line": "2023-05-08",
+    "description": "This is a default description for each task"
+  }
+},
+{
+  "model": "display.task",
+  "pk": 5,
+  "fields": {
+    "objective": "2",
+    "status": "new",
+    "dead_line": "2025-05-08",
+    "description": "This is a default description for each task"
+  }
+},
+{
+  "model": "display.task",
+  "pk": 6,
+  "fields": {
+    "objective": "new task",
+    "status": "new",
+    "dead_line": "2023-05-08",
+    "description": "This is a default description for each task"
+  }
+},
+{
+  "model": "display.task",
+  "pk": 7,
+  "fields": {
+    "objective": "go to sleep",
+    "status": "new",
+    "dead_line": "2023-05-08",
+    "description": "This is a default description for each task"
+  }
+},
+{
+  "model": "display.task",
+  "pk": 8,
+  "fields": {
+    "objective": "go to sleep",
+    "status": "new",
+    "dead_line": "2023-05-08",
+    "description": "This is a default description for each task"
+  }
+},
+{
+  "model": "display.task",
+  "pk": 9,
+  "fields": {
+    "objective": "check the tasks",
+    "status": "new",
+    "dead_line": "2023-05-08",
+    "description": "This is a default description for each task"
+  }
+},
+{
+  "model": "display.task",
+  "pk": 10,
+  "fields": {
+    "objective": "Buy a couple of wine bottles and olives",
+    "status": "New",
+    "dead_line": "2023-05-12",
+    "description": "This is a default description for each task"
+  }
+},
+{
+  "model": "display.task",
+  "pk": 11,
+  "fields": {
+    "objective": "Add task detail view",
+    "status": "New",
+    "dead_line": "2023-05-14",
+    "description": "This is a default description for each task"
+  }
+}
+]
