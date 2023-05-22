@@ -1,6 +1,7 @@
 from django.shortcuts import redirect, render, get_object_or_404
 from .models import Task
 from datetime import datetime
+from .forms import TaskForm
 
 # Create your views here.
 def index_view(request):
@@ -35,3 +36,35 @@ def new_task(request):
 def detail_task(request, *args, **kwargs):
     task = get_object_or_404(Task,pk=kwargs.get('pk'))
     return render(request, 'detail_task.html', context = {'task': task})
+
+def update_task(request, *args, **kwargs):
+    task = get_object_or_404(Task, pk=kwargs.get('pk'))
+    if request.method == 'GET': 
+        return render(request, 'update_task.html', context = {'task': task})
+    elif request.method == 'POST':
+
+        objective = request.POST.get('objective')
+        dead_line = request.POST.get('date')
+        status = request.POST.get('status')
+
+        task.objective = objective
+        task.dead_line = dead_line
+        # task.status = status
+        task.save()
+        print(task.objective)
+        return redirect('main')
+
+def delete_task(request, pk):
+    task = get_object_or_404(Task, pk=pk)
+    if request.method == 'POST':
+        return redirect('main')
+
+def task_confirm_delete(request, pk):
+    task = get_object_or_404(Task, pk=pk)
+
+    if request.method == 'POST':
+        task.delete()
+        return redirect('main')
+
+    context = {'task': task}
+    return render(request, 'confirm_delete.html', context)

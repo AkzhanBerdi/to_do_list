@@ -7,6 +7,15 @@
                     <h6 class="card-title">status: {{ task.status }}</h3>
                     <h6 class="card-title">{{ task.dead_line }}</h3>
                     <p class="card-text">{{ task.description }}</p>
+                    <!-- Update Task Button -->
+                        <a href="{% url 'update_task' task.id %}" class="btn btn-primary">Update Task</a>
+
+                        <!-- Delete Task Button -->
+                        <form action="{% url 'delete_task' task.id %}" method="post" style="display: inline;">
+                            {% csrf_token %}
+                            <input type="hidden" name="task_id" value="{{ task.id }}">
+                            <button type="submit" class="btn btn-danger">Delete Task</button>
+                        </form>
                 </div>
             </div>
 {% endblock %}
