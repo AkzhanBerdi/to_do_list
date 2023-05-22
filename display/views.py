@@ -54,17 +54,22 @@ def update_task(request, *args, **kwargs):
         print(task.objective)
         return redirect('main')
 
-def delete_task(request, pk):
-    task = get_object_or_404(Task, pk=pk)
-    if request.method == 'POST':
-        return redirect('main')
-
-def task_confirm_delete(request, pk):
-    task = get_object_or_404(Task, pk=pk)
-
-    if request.method == 'POST':
+def delete_task(request, *args, **kwargs):
+    task = get_object_or_404(Task, pk=kwargs.get('pk'))
+    if 'delete_it' in request.POST:
         task.delete()
         return redirect('main')
+    return render(request, 'delete_task.html', {'task': task})
 
-    context = {'task': task}
-    return render(request, 'confirm_delete.html', context)
+# def delete_task(request, pk):
+#     task = get_object_or_404(Task, pk=pk)
+
+# def confirm_delete(request, pk):
+#     task = get_object_or_404(Task, pk=pk)
+
+#     if request.method == 'POST':
+#         task.delete()
+#         return redirect('main')
+
+#     context = {'task': task}
+#     return render(request, 'delete_task.html', context)
